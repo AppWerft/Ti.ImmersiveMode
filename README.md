@@ -1,6 +1,7 @@
 # Ti.Systembars
 
 This module realize [Immersive Full-Screen Mode](https://developer.android.com/training/system-ui/immersive.html)
+<img src="https://developer.android.com/images/training/imm-states.png" />    
   
 ## Usage
 
