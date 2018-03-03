@@ -13,6 +13,4 @@ win.addEventListener("open",function(){
 });
 var SysBars = require("ti.systembars");
 SysBars.hideSystemNavigationBar();
-
-
 ```
