@@ -6,7 +6,7 @@
  * Please see the LICENSE included with this distribution for details.
  *
  */
-package ti.systemnavigationbar;
+package ti.systembars;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
@@ -20,7 +20,7 @@ import android.os.Build;
 import android.view.View;
 import android.view.Window;
 
-@Kroll.module(name = "Systemnavigationbar", id = "ti.systemnavigationbar")
+@Kroll.module(name = "Systemnavigationbar", id = "ti.systembars")
 public class SystemnavigationbarModule extends KrollModule {
 
 	// Standard Debugging variables

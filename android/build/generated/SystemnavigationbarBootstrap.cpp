@@ -18,7 +18,7 @@
 #include "BootstrapJS.cpp"
 #include "KrollGeneratedBindings.cpp"
 
-#define TAG "ti.systemnavigationbar"
+#define TAG "ti.systembars"
 
 using namespace v8;
 
@@ -113,16 +113,16 @@ static void Systemnavigationbar_dispose(Isolate* isolate)
 }
 
 static titanium::bindings::BindEntry SystemnavigationbarBinding = {
-	"ti.systemnavigationbar",
+	"ti.systembars",
 	Systemnavigationbar_init,
 	Systemnavigationbar_dispose
 };
 
 // Main module entry point
 extern "C" JNIEXPORT void JNICALL
-Java_ti_systemnavigationbar_SystemnavigationbarBootstrap_nativeBootstrap
+Java_ti_systembars_SystemnavigationbarBootstrap_nativeBootstrap
 	(JNIEnv *env, jobject self)
 {
-	titanium::KrollBindings::addExternalBinding("ti.systemnavigationbar", &SystemnavigationbarBinding);
+	titanium::KrollBindings::addExternalBinding("ti.systembars", &SystemnavigationbarBinding);
 	titanium::KrollBindings::addExternalLookup(&(titanium::bindings::SystemnavigationbarBindings::lookupGeneratedInit));
 }

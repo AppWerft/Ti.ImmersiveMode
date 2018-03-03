@@ -16,7 +16,7 @@ function moduleBootstrap(moduleBinding) {
 			name, namespace, moduleBinding.getBinding);
 	}
 
-	var module = moduleBinding.getBinding("ti.systemnavigationbar.SystemnavigationbarModule")["Systemnavigationbar"];
+	var module = moduleBinding.getBinding("ti.systembars.SystemnavigationbarModule")["Systemnavigationbar"];
 	var invocationAPIs = module.invocationAPIs = [];
 	module.apiName = "Systemnavigationbar";
 
@@ -24,23 +24,8 @@ function moduleBootstrap(moduleBinding) {
 		invocationAPIs.push({ namespace: namespace, api: api });
 	}
 
-	addInvocationAPI(module, "Systemnavigationbar", "Systemnavigationbar", "createExample");
-		if (!("__propertiesDefined__" in module)) {Object.defineProperties(module, {
-"Example": {
-get: function() {
-var Example =  lazyGet(this, "ti.systemnavigationbar.ExampleProxy", "Example", "Example");
-return Example;
-},
-configurable: true
-},
-
-});
-module.constructor.prototype.createExample = function() {
-return new module["Example"](arguments);
-}
-}
-module.__propertiesDefined__ = true;
-return module;
+	
+	return module;
 
 }
 exports.bootstrap = moduleBootstrap;

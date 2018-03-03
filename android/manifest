@@ -12,7 +12,7 @@ copyright: Copyright (c) 2018 by Your Company
 
 # these should not be edited
 name: systemnavigationbar
-moduleid: ti.systemnavigationbar
+moduleid: ti.systembars
 guid: b65c14a8-17b4-4f3a-9ae5-92c7d37334a7
 platform: android
 minsdk: 7.0.0

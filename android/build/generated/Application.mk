@@ -1,4 +1,4 @@
-# Main NDK build script for ti.systemnavigationbar
+# Main NDK build script for ti.systembars
 
 APP_BUILD_SCRIPT := jni/Android.mk
 TARGET_PLATFORM := android-19

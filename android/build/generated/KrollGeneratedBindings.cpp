@@ -9,8 +9,7 @@
 #include <unordered_map>
 #include <KrollBindings.h>
 
-#include "ti.systemnavigationbar.ExampleProxy.h"
-#include "ti.systemnavigationbar.SystemnavigationbarModule.h"
+#include "ti.systembars.SystemnavigationbarModule.h"
 
 
 namespace titanium {
@@ -45,12 +44,10 @@ namespace titanium {
 
 		BindEntry* SystemnavigationbarBindings::lookupGeneratedInit(const char* name, unsigned int length) {
 			static BindEntry binds[] = {
-				{"ti.systemnavigationbar.SystemnavigationbarModule", ::ti::systemnavigationbar::SystemnavigationbarModule::bindProxy, ::ti::systemnavigationbar::SystemnavigationbarModule::dispose},
-				{"ti.systemnavigationbar.ExampleProxy", ::ti::systemnavigationbar::systemnavigationbar::ExampleProxy::bindProxy, ::ti::systemnavigationbar::systemnavigationbar::ExampleProxy::dispose}
+				{"ti.systembars.SystemnavigationbarModule", ::ti::systembars::SystemnavigationbarModule::bindProxy, ::ti::systembars::SystemnavigationbarModule::dispose}
 			};
 			static std::unordered_map<const char*, BindEntry&, Hash, Compare> map = {
 				{binds[0].name, binds[0]},
-				{binds[1].name, binds[1]},
 			};
 
 			auto result = map.find(name);
