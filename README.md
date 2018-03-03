@@ -11,6 +11,4 @@ win.addEventListener("open",function(){
 	SysBars.setNavigationBarColor("#88ff0000");
 	
 });
-var SysBars = require("ti.systembars");
-SysBars.hideSystemNavigationBar();
 ```
