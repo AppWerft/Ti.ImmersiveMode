@@ -1,4 +1,4 @@
-# Ti.Systembars
+# Ti.ImmersiveMode
 
 This module realize [Immersive Full-Screen Mode](https://developer.android.com/training/system-ui/immersive.html)
 <img src="https://developer.android.com/images/training/imm-states.png" />    
@@ -6,11 +6,14 @@ This module realize [Immersive Full-Screen Mode](https://developer.android.com/t
 ## Usage
 
 ```javascript
-var SysBars = require("ti.systembars");
+var Imm = require("ti.ímmersivmode");
 win.addEventListener("open",function(){
-	SysBars.hideSystembars();
-	SysBars.setStatusBarColor("#ff0000");
-	SysBars.setNavigationBarColor("#88ff0000");
+	Imm.setSticky(true);
+	Imm.hideSystemUI();
+	Imm.showSystemUI();
+	Imm.resetSystemUI();
+	Imm.setStatusBarColor("#ff0000");
+	Imm.setNavigationBarColor("#88ff0000");
 	
 });
 ```

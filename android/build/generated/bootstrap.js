@@ -16,9 +16,9 @@ function moduleBootstrap(moduleBinding) {
 			name, namespace, moduleBinding.getBinding);
 	}
 
-	var module = moduleBinding.getBinding("ti.systembars.SystemnavigationbarModule")["Systemnavigationbar"];
+	var module = moduleBinding.getBinding("ti.immersivemode.ImmersivemodeModule")["Immersivemode"];
 	var invocationAPIs = module.invocationAPIs = [];
-	module.apiName = "Systemnavigationbar";
+	module.apiName = "Immersivemode";
 
 	function addInvocationAPI(module, moduleNamespace, namespace, api) {
 		invocationAPIs.push({ namespace: namespace, api: api });

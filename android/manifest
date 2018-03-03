@@ -5,14 +5,14 @@
 version: 1.0.0
 apiversion: 4
 architectures: arm64-v8a armeabi-v7a x86
-description: systemnavigationbar
+description: ImmersiveMode
 author: Rainer
 license: Specify your license
 copyright: Copyright (c) 2018 by Your Company
 
 # these should not be edited
-name: systemnavigationbar
-moduleid: ti.systembars
+name: immersivemode
+moduleid: ti.immersivemode
 guid: b65c14a8-17b4-4f3a-9ae5-92c7d37334a7
 platform: android
 minsdk: 7.0.0

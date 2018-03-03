@@ -1,11 +1,11 @@
-# Android.mk for ti.systembars
+# Android.mk for ti.immersivemode
 LOCAL_PATH := $(call my-dir)
 THIS_DIR := $(LOCAL_PATH)
 
 include $(CLEAR_VARS)
 
 THIS_DIR = $(LOCAL_PATH)
-LOCAL_MODULE := ti.systembars
+LOCAL_MODULE := ti.immersivemode
 LOCAL_CFLAGS := -g "-I$(TI_MOBILE_SDK)/android/native/include"
 
 # https://jira.appcelerator.org/browse/TIMOB-15263

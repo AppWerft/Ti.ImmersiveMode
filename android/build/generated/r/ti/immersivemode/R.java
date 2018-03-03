@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package android.support.design;
+package ti.immersivemode;
 
 public final class R {
     public static final class anim {

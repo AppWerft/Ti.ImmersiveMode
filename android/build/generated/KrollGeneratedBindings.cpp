@@ -9,7 +9,7 @@
 #include <unordered_map>
 #include <KrollBindings.h>
 
-#include "ti.systembars.SystemnavigationbarModule.h"
+#include "ti.immersivemode.ImmersivemodeModule.h"
 
 
 namespace titanium {
@@ -37,14 +37,14 @@ namespace titanium {
 			}
 		};
 
-		class SystemnavigationbarBindings {
+		class ImmersivemodeBindings {
 			public:
 				static BindEntry* lookupGeneratedInit(const char*, unsigned int);
 		};
 
-		BindEntry* SystemnavigationbarBindings::lookupGeneratedInit(const char* name, unsigned int length) {
+		BindEntry* ImmersivemodeBindings::lookupGeneratedInit(const char* name, unsigned int length) {
 			static BindEntry binds[] = {
-				{"ti.systembars.SystemnavigationbarModule", ::ti::systembars::SystemnavigationbarModule::bindProxy, ::ti::systembars::SystemnavigationbarModule::dispose}
+				{"ti.immersivemode.ImmersivemodeModule", ::ti::immersivemode::ImmersivemodeModule::bindProxy, ::ti::immersivemode::ImmersivemodeModule::dispose}
 			};
 			static std::unordered_map<const char*, BindEntry&, Hash, Compare> map = {
 				{binds[0].name, binds[0]},
