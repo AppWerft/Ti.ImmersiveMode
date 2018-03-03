@@ -7,13 +7,12 @@ This module realize [Immersive Full-Screen Mode](https://developer.android.com/t
 
 ```javascript
 var Imm = require("ti.ímmersivmode");
+Imm.setSticky(true);
 win.addEventListener("open",function(){
-	Imm.setSticky(true);
 	Imm.hideSystemUI();
 	Imm.showSystemUI();
 	Imm.resetSystemUI();
 	Imm.setStatusBarColor("#ff0000");
 	Imm.setNavigationBarColor("#88ff0000");
-	
 });
 ```
